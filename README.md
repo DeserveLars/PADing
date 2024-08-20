@@ -8,7 +8,7 @@ We study universal zero-shot segmentation in this work to achieve panoptic, inst
 ![image](https://github.com/heshuting555/PADing/blob/main/imgs/framework.png)
 ## Installation
 ### Requirements
-The code is tested under CUDA 11.2, Pytorch 1.9.0 and Detectron2 0.6.   
+The code is tested under CUDA 11.1, Pytorch 1.9.0 and Detectron2 0.6.   
 1. Install [Detectron2](https://github.com/facebookresearch/detectron2) following the [manual](https://detectron2.readthedocs.io/en/latest/)  
 2. Run `sh make.sh` under `PADing/modeling/pixel_decoder/ops` (Note: 1-2 steps you can also follow the installation process of [Mask2Former](https://github.com/facebookresearch/Mask2Former))  
 3. Install other required packages: pip install -r requirements.txt  
