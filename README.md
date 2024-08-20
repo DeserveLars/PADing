@@ -9,26 +9,25 @@ We study universal zero-shot segmentation in this work to achieve panoptic, inst
 ## Installation
 ### Requirements
 The code is tested under CUDA 11.2, Pytorch 1.9.0 and Detectron2 0.6.   
-1.Install [Detectron2](https://github.com/facebookresearch/detectron2) following the [manual](https://detectron2.readthedocs.io/en/latest/)  
-2.Run `sh make.sh` under `PADing/modeling/pixel_decoder/ops` (Note: 1-2 steps you can also follow the installation process of [Mask2Former](https://github.com/facebookresearch/Mask2Former))  
-3.Install other required packages: pip install -r requirements.txt  
-4.Prepare the dataset following [datasets/README.md](https://github.com/heshuting555/PADing/blob/main/datasets/README.md)  
+1. Install [Detectron2](https://github.com/facebookresearch/detectron2) following the [manual](https://detectron2.readthedocs.io/en/latest/)  
+2. Run `sh make.sh` under `PADing/modeling/pixel_decoder/ops` (Note: 1-2 steps you can also follow the installation process of [Mask2Former](https://github.com/facebookresearch/Mask2Former))  
+3. Install other required packages: pip install -r requirements.txt  
+4. Prepare the dataset following [datasets/README.md](https://github.com/heshuting555/PADing/blob/main/datasets/README.md)  
 An example of installation is shown below:  
 ```
 conda create -n pading python==3.7  
 conda activate pading  
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html  
-python -m pip install detectron2 -f \  
-  https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.9/index.html  
+python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.9/index.html  
 
-git clone https://github.com/dingjiansw101/ZegFormer.git  
+git clone https://github.com/heshuting555/PADing.git 
 cd PADing  
 pip install -r requirements.txt  
 ```  
 ## Small target segmentation
 Here we evaluate the performance of PADing on small target segmentation, taking the dataset as an example.  
 ### Dataset Prepare
-See [data preparation](https://github.com/heshuting555/PADing/blob/main/datasets/README.md)  
+See [data preparation](https://github.com/heshuting555/PADing/blob/main/datasets/README.md).  
 ### Inference
 For example  
 ```  
